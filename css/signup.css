@@ -1,0 +1,285 @@
+@import "url("https: //fonts.googleapis.com/css?family=Roboto:100")";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.signupcontainer {
+  top: 10%;
+  right: 20%;
+  width: 450px;
+  height: 650px;
+  background: #fff;
+}
+
+.signupcontainer svg {
+  position: absolute;
+  right: 20%;
+}
+
+.container1 {
+  max-width: 720px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.container1 img {
+  position: absolute;
+  top: 0px;
+  right: 46%;
+  width: 54%;
+  height: 98.2%;
+  /* display: none; */
+}
+
+.container1 h3 {
+  position: absolute;
+  top: 5%;
+  right: 64%;
+  text-align: center;
+  font-weight: 300;
+  animation: signupanimate 1s forwards 0s linear;
+}
+
+.rect1 {
+  z-index: 1;
+  stroke-dasharray: 197 509;
+  stroke-dashoffset: -729;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.rect2 {
+  z-index: 1;
+  stroke-dasharray: 197 509;
+  stroke-dashoffset: -1058;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.text1 {
+  z-index: 100;
+  position: absolute;
+  right: 20%;
+  width: 22%;
+  height: 5%;
+  padding-top: 21px;
+  padding-left: 3px;
+  color: #000;
+  border: none;
+  background: #fff;
+  font-weight: bold;
+  transition: all 600ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+.text1:focus {
+  outline-width: 0;
+  font-size: 16px;
+}
+
+.pass1 {
+  z-index: 100;
+  position: absolute;
+  right: 10%;
+  width: 196px;
+  height: 44px;
+  margin-top: 305px;
+  padding-top: 21px;
+  padding-left: 3px;
+  color: #000;
+  border: none;
+  background: #fff;
+  font-weight: bold;
+  transition: all 600ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+.pass1:focus {
+  outline-width: 0;
+  font-size: 16px;
+}
+
+.loginbutton1 {
+  z-index: 100;
+  position: absolute;
+  width: 18%;
+  height: 6%;
+  margin-top: 400px;
+  margin-right: 100px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 22px;
+  background: #000;
+  font-size: 18px;
+  font-weight: bold;
+  animation: loginbuttonanimate 1s forwards 0s linear;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.loginbutton1:hover {
+  color: #000;
+  background: rgba(38, 37, 34, 0.26);
+  font-weight: bold;
+}
+
+.loginbutton1:focus {
+  outline-width: 0;
+}
+
+.signupbutton1 {
+  z-index: 100;
+  position: absolute;
+  top: 18%;
+  left: 68%;
+  width: 200px;
+  height: 43px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 22px;
+  background: #000;
+  font-size: 18px;
+  font-weight: bold;
+  animation: signupbuttonanimate 1s forwards 0s linear;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.signupbutton1:hover {
+  color: #000;
+  background: rgba(38, 37, 34, 0.26);
+  font-weight: bold;
+}
+
+.signupbutton1:focus {
+  outline-width: 0;
+}
+
+.header1 {
+  position: absolute;
+  top: 8%;
+  right: 10%;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 38px;
+  font-weight: 300;
+  animation: headeranimate 1s forwards 0s linear;
+}
+
+.logincontainer p {
+  position: absolute;
+  margin-top: 200px;
+  margin-right: 100px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+  animation: headeranimate 1s forwards 0s linear;
+}
+
+@keyframes headeranimate {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  50% {
+    opacity: 0.6;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1.0;
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes loginbuttonanimate {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  50% {
+    opacity: 0.6;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1.0;
+    transform: translateY(10px);
+  }
+}
+
+@keyframes signupbuttonanimate {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  50% {
+    opacity: 0.6;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1.0;
+    transform: translateY(10px);
+  }
+}
+
+@keyframes signupanimate {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  50% {
+    opacity: 0.6;
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 1.0;
+    transform: translateY(5px);
+  }
+}
+
+/* For sign up form */
+
+.signupform {
+  position: absolute;
+  top: 26%;
+  left: 58%;
+}
+
+.form-styling {
+  width: 80%;
+  height: 35px;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  color: #000;
+  border: none;
+  border-radius: 20px;
+  background: rgba(113, 110, 31, 0.2);
+  font-weight: bold;
+}
+
+.submitbutton {
+  z-index: 100;
+  position: absolute;
+  width: 18%;
+  height: 35px;
+  top: 138%;
+  left:34%;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 22px;
+  background: #000;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.submitbutton:hover {
+  color: #000;
+  background: rgba(38, 37, 34, 0.26);
+  font-weight: bold;
+}
+
+.submitbutton:focus {
+  outline-width: 0;
+}
