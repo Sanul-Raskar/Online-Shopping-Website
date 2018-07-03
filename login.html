@@ -12,22 +12,24 @@
 
 <body>
   <div class="al"></div>
-  <!-- <div id="container">
-    <div class="logincontainer">
-      <div class="header">Welcome Back</div>
-      <p>We have missed you!</p>
-      <input id='username' type="text" class='text' onfocus="handle2()" class='inc2' type="text" name="Username" placeholder='Username' value="">
-      <input id='password' type="password" class='pass' onfocus="handle1()" class='inc1' type="pass" name="Password" placeholder='Password' value="">
-      <button class="loginbutton">Login</button>
-      <svg width="390" height="549" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <div id="container">
+    <div id="emptyclass">
+      <div class="logincontainer">
+        <div class="header">Welcome Back</div>
+        <p>We have missed you!</p>
+        <input id='username' type="text" class='text' onfocus="handle2()" class='inc2' type="text" name="Username" placeholder='Username' value="">
+        <input id='password' type="password" class='pass' onfocus="handle1()" class='inc1' type="pass" name="Password" placeholder='Password' value="">
+        <button onclick="leftslidelogin()" class="loginbutton">Login</button>
+        <svg width="390" height="549" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <rect id='rect' class='rect1' x="45px" y="300px" rx="27" ry="27" width="300px" height="50px" style="stroke: #000; stroke-width: 1px; fill: #fff" />
   </svg>
+      </div>
     </div>
-    <img src="css/img/login.jpg" alt="">
-    <h3 style="font-size:26px">New here?<br/> <span style="font-size:16px">Sign Up and discover great new products</span></h3>
-    <button onclick="opensignup()" class="signupbutton" >Sign Up</button>
-  </div> -->
-  <div class="container1">
+    <img id="login_right_img" src="css/img/login.jpg" alt="">
+    <h3 id="login_right_title" style="font-size:26px">New here?<br/> <span style="font-size:16px">Sign Up and discover great new products</span></h3>
+    <button id="login_right_button" class="signupbutton">Sign Up</button>
+  </div>
+  <!-- <div class="container1">
     <div class="signupcontainer">
       <div class="header1">Tell us more about you</div>
       <form class="signupform" action="index.html" method="post" name="form">
@@ -91,7 +93,7 @@
   <option data-countryCode="CK" value="682">Cook Islands (+682)</option>
   <option data-countryCode="CR" value="506">Costa Rica (+506)</option>
   <option data-countryCode="HR" value="385">Croatia (+385)</option>
-  <!-- <option data-countryCode="CU" value="53">Cuba (+53)</option> -->
+  <option data-countryCode="CU" value="53">Cuba (+53)</option>
   <option data-countryCode="CY" value="90">Cyprus - North (+90)</option>
   <option data-countryCode="CY" value="357">Cyprus - South (+357)</option>
   <option data-countryCode="CZ" value="420">Czech Republic (+420)</option>
@@ -136,7 +138,7 @@
   <option data-countryCode="IN" value="91">India (+91)</option>
   <option data-countryCode="ID" value="62">Indonesia (+62)</option>
   <option data-countryCode="IQ" value="964">Iraq (+964)</option>
-  <!-- <option data-countryCode="IR" value="98">Iran (+98)</option> -->
+  <option data-countryCode="IR" value="98">Iran (+98)</option>
   <option data-countryCode="IE" value="353">Ireland (+353)</option>
   <option data-countryCode="IL" value="972">Israel (+972)</option>
   <option data-countryCode="IT" value="39">Italy (+39)</option>
@@ -146,7 +148,7 @@
   <option data-countryCode="KZ" value="7">Kazakhstan (+7)</option>
   <option data-countryCode="KE" value="254">Kenya (+254)</option>
   <option data-countryCode="KI" value="686">Kiribati (+686)</option>
-  <!-- <option data-countryCode="KP" value="850">Korea - North (+850)</option> -->
+  <option data-countryCode="KP" value="850">Korea - North (+850)</option>
   <option data-countryCode="KR" value="82">Korea - South (+82)</option>
   <option data-countryCode="KW" value="965">Kuwait (+965)</option>
   <option data-countryCode="KG" value="996">Kyrgyzstan (+996)</option>
@@ -232,7 +234,7 @@
   <option data-countryCode="SZ" value="268">Swaziland (+268)</option>
   <option data-countryCode="SE" value="46">Sweden (+46)</option>
   <option data-countryCode="CH" value="41">Switzerland (+41)</option>
-  <!-- <option data-countryCode="SY" value="963">Syria (+963)</option> -->
+  <option data-countryCode="SY" value="963">Syria (+963)</option>
   <option data-countryCode="TW" value="886">Taiwan (+886)</option>
   <option data-countryCode="TJ" value="992">Tajikistan (+992)</option>
   <option data-countryCode="TH" value="66">Thailand (+66)</option>
@@ -266,7 +268,7 @@
       </form>
       <img src="css/img/signup.jpg" alt="">
     </div>
-  </div>
+  </div>-->
   <script src="js/login.js">
   </script>
 </body>
