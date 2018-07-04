@@ -13,41 +13,45 @@
 <body>
   <div class="al"></div>
   <div id="container">
-    <div id="emptyclass">
+    <div id="login_left_panel">
       <div class="logincontainer">
         <div class="header">Welcome Back</div>
         <p>We have missed you!</p>
         <input id='username' type="text" class='text' onfocus="handle2()" class='inc2' type="text" name="Username" placeholder='Username' value="">
         <input id='password' type="password" class='pass' onfocus="handle1()" class='inc1' type="pass" name="Password" placeholder='Password' value="">
-        <button onclick="leftslidelogin()" class="loginbutton">Login</button>
+        <button class="loginbutton">Login</button>
         <svg width="390" height="549" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <rect id='rect' class='rect1' x="45px" y="300px" rx="27" ry="27" width="300px" height="50px" style="stroke: #000; stroke-width: 1px; fill: #fff" />
   </svg>
       </div>
     </div>
-    <img id="login_right_img" src="css/img/login.jpg" alt="">
-    <h3 id="login_right_title" style="font-size:26px">New here?<br/> <span style="font-size:16px">Sign Up and discover great new products</span></h3>
-    <button id="login_right_button" class="signupbutton">Sign Up</button>
+    <div id="login_right_panel">
+      <img src="css/img/login.jpg" alt="">
+      <h3 style="font-size:26px">New here?<br/> <span style="font-size:16px">Sign Up and discover great new products</span></h3>
+      <button onclick="leftslidelogin()" class="signupbutton">Sign Up</button>
+    </div>
   </div>
-  <!-- <div class="container1">
-    <div class="signupcontainer">
+  <div id="container1">
+    <div id="signupcontainer">
       <div class="header1">Tell us more about you</div>
-      <form class="signupform" action="index.html" method="post" name="form">
-        <input id='name' style="top:18%" type="text" class='form-styling' type="text" name="name" placeholder='Name' value="">
-        <input id='username' style="top:25%" type="text" class='form-styling' type="text" name="Username" placeholder='Username' value="">
-        <input id='email' style="top:32%" type="text" class='form-styling' class='inc2' type="text" name="email" placeholder='Email' value="">
-        <input id='password' style="top:38%" type="password" class='form-styling' class='inc1' type="pass" name="Password" placeholder='Password' value="">
-        <input id='password' style="top:45%" type="password" class='form-styling' class='inc1' type="pass" name="Password" placeholder='Re-Enter Password' value="">
+      <form action="index.html" method="post" name="form">
+        <input id='name' style="top:18%;" type="text" class='form-styling' type="text" name="name" placeholder='Name' value="">
+        <input id='username' style="top:26%" type="text" class='form-styling' type="text" name="Username" placeholder='Username' value="">
+        <input id='email' style="top:34%" type="text" class='form-styling' class='inc2' type="text" name="email" placeholder='Email' value="">
+        <input id='password' style="top:42%" type="password" class='form-styling' class='inc1' type="pass" name="Password" placeholder='Password' value="">
+        <input id='password' style="top:50%" type="password" class='form-styling' class='inc1' type="pass" name="Password" placeholder='Re-Enter Password' value="">
         <br>
-        <input type="radio" value="male" name="gender" checked="checked" style="position:absolute;left:4%;top:102%;">
-        <label for="f-option" style="position:absolute;left:8%;top:102%;">Male</label>
-        <input type="radio" value="female" name="gender" style="position:absolute;left:19%;top:102%;">
-        <label for="f-option" style="position:absolute;left:22.4%;top:102%;">Female</label>
-        <input type="radio" value="other" name="gender" style="position:absolute;left:36.2%;top:102%;">
-        <label for="f-option" style="position:absolute;left:40%;top:102%;">Other</label>
+        <input type="radio" value="male" name="gender" checked="checked" style="position:absolute;left:10%;top:58%;">
+        <label for="f-option" style="position:absolute;left:14%;top:58%;">Male</label>
+        <input type="radio" value="female" name="gender" style="position:absolute;left:24%;top:58%;">
+        <label for="f-option" style="position:absolute;left:28%;top:58%;">Female</label>
+        <input type="radio" value="other" name="gender" style="position:absolute;left:40%;top:58%;">
+        <label for="f-option" style="position:absolute;left:44%;top:58%;">Other</label>
 
-        <select class='form-styling' style="position:absolute;left:1%;top:116%;width:46%;">
-  <option data-countryCode="US" value="1" selected>USA (+1)</option>
+        <select class='form-styling' style="position:absolute;left:10%;top:64%;width:46%;">
+            <option data-countryCode="IN" value="91" selected>India (+91)</option>
+
+  <option data-countryCode="US" value="1">USA (+1)</option>
   <option data-countryCode="GB" value="44">UK (+44)</option>
   <option disabled="disabled">Other Countries</option>
   <option data-countryCode="DZ" value="213">Algeria (+213)</option>
@@ -135,7 +139,6 @@
   <option data-countryCode="HK" value="852">Hong Kong (+852)</option>
   <option data-countryCode="HU" value="36">Hungary (+36)</option>
   <option data-countryCode="IS" value="354">Iceland (+354)</option>
-  <option data-countryCode="IN" value="91">India (+91)</option>
   <option data-countryCode="ID" value="62">Indonesia (+62)</option>
   <option data-countryCode="IQ" value="964">Iraq (+964)</option>
   <option data-countryCode="IR" value="98">Iran (+98)</option>
@@ -263,14 +266,20 @@
   <option data-countryCode="ZM" value="260">Zambia (+260)</option>
   <option data-countryCode="ZW" value="263">Zimbabwe (+263)</option>
 </select>
-        <input id='tel' style="position: absolute;top:116%;width:30%;left:50%" type="text" class='form-styling' type="text" name="tel" placeholder='Mobile' value="">
- <input type="submit" class="submitbutton" value="Submit">
+        <input id='tel' style="position: absolute;top:64%;width:30%;left:60%" type="text" class='form-styling' type="text" name="tel" placeholder='Mobile' value="">
+        <input type="submit" class="submitbutton" value="Submit">
       </form>
-      <img src="css/img/signup.jpg" alt="">
     </div>
-  </div>-->
-  <script src="js/login.js">
-  </script>
+
+
+    <img id="signup_left_panel_img" src="css/img/signup.jpg" alt="">
+    <h3  id="signup_left_panel_h3" style="font-size:26px">Already have an account?<br/> <span style="font-size:16px">Login and discover great new products</span></h3>
+    <button  id="signup_left_panel_button" class="submitpage_loginbutton">Login </button>
+
+
+  </div>
+
+  <script src="js/login.js"></script>
 </body>
 
 </html>

@@ -19,19 +19,21 @@ setTimeout(() => {
 }, 1500);
 
 function leftslidelogin() {
-  document.getElementById('emptyclass').classList.toggle('login_left_slide');
-  document.getElementById('login_right_img').classList.toggle('cart_right_slide');
-  document.getElementById('login_right_title').classList.toggle('cart_right_slide');
-  document.getElementById('login_right_button').classList.toggle('cart_right_slide');
+  document.getElementById('login_left_panel').classList.toggle('login_left_rightSlide');
+  document.getElementById('login_right_panel').classList.toggle('login_right_leftSlide');
 
   setTimeout(function hideLogin() {
     var hidelogin = document.getElementById('container');
-    if (hidelogin.style.display === "none") {
-      hidelogin.style.display = "block";
+    hidelogin.style.display = "none";
+  }, 1000);
 
-    } else {
-      hidelogin.style.display = "none";
-    }
-  }, 1200);
+  var showSignup = document.getElementById('container1');
+  showSignup.style.display = "block";
+  setTimeout(function(){},1600);
+  document.getElementById("signupcontainer").className += " signup_form_left_slide";
+  document.getElementById("signup_left_panel_img").className += " login_on_signup_leftslide";
+  document.getElementById("signup_left_panel_h3").className += " login_on_signup_leftslide";
+  document.getElementById("signup_left_panel_button").className += " login_on_signup_leftslide";
+
 
 }
