@@ -19,6 +19,11 @@ setTimeout(() => {
 }, 1500);
 
 function loginpage_submit() {
+  document.getElementById('signupcontainer').classList.remove('signup_form_right_slide');
+  document.getElementById('signup_left_panel_img').classList.remove('submit_on_login_rightslide');
+  document.getElementById('signup_left_panel_h3').classList.remove('submit_on_login_rightslide');
+  document.getElementById('signup_left_panel_button').classList.remove('submit_on_login_rightslide');
+  document.getElementById('login_img').classList.remove('cart_on_login_leftslide');
   document.getElementById('login_left_panel').classList.toggle('login_left_rightSlide');
   document.getElementById('login_right_panel').classList.toggle('login_right_leftSlide');
 
