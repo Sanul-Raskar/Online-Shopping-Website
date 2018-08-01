@@ -41,6 +41,7 @@
 }
 
 .rect1 {
+  position: absolute;
   z-index: 1;
   stroke-dasharray: 197 509;
   stroke-dashoffset: -729;
@@ -304,8 +305,10 @@
   position: absolute;
   top: 6%;
   left: 60%;
-  width: 600px;
-  height: 650px;
+  /* width: 600px;
+  height: 650px; */
+  width: 44%;
+  height: 94%;
   background: #fff;
 }
 
@@ -541,4 +544,24 @@
     left: 46%;
     opacity: 1.0;
   }
+}
+
+
+#displayformstatus{
+opacity: 0.6;
+display: none;
+z-index: 100;
+position: absolute;
+top: 6%;
+left: 60%;
+width: 600px;
+height: 650px;
+background: #fff;
+}
+
+#displayformstatus p{
+  opacity: 1;
+  color: red;
+  z-index: 150;
+  text-align: center;
 }

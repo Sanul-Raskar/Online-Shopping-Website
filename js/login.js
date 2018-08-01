@@ -63,3 +63,46 @@ function submitpage_login() {
   document.getElementById('login_img').classList.add('cart_on_login_leftslide');
 
 }
+
+
+// Sign up validation
+
+
+// $("#signupformv").validate({
+//   invalidHandler: function(event, validator) {
+//     // 'this' refers to the form
+//     var errors = validator.numberOfInvalids();
+//     if (errors) {
+//       var message = errors == 1
+//         ? 'You missed 1 field. It has been highlighted'
+//         : 'You missed ' + errors + ' fields. They have been highlighted';
+//       $("div #displayformstatus p").html(message);
+//       $("div #displayformstatus p").show();
+//     } else {
+//       $("div #displayformstatus p").hide();
+//     }
+//   }
+// });
+
+function myvalidatefunc() {
+  var validatename = document.getElementById("name");
+  var validateemail = document.getElementById("email");
+  var validateusername = document.getElementById("username");
+  var validatepassword = document.getElementById("password");
+  var validatemobile = document.getElementById("tel");
+
+  console.log("Connected");
+
+  if (validatename.value.length == 0 || validateemail.value.length == 0 || validateusername.value.lenght == 0 || validatepassword.value.lenght == 0 || validatemobile.value.lenght == 0) {
+    console.log("name error");
+    document.getElementById('statusmsg').innerText = "* All fields are mandatory";
+    validatename.focus();
+    document.getElementById("showNameError").innerText="Please enetr name";
+  }
+
+  if (validatemobile.value.length < 10) {
+    document.getElementById("displayformstatus").style.display="block";
+    console.log("Invalid mobile number");
+    document.getElementById("statusmsg").innerText = "Mobile number must be 10 digits long!";
+  }
+}
