@@ -7,7 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Login</title>
   <link rel="stylesheet" href="css/login.css">
-  <!-- <link rel="stylesheet" href="/css/signup.css">  -->
 </head>
 
 <body>
@@ -19,10 +18,9 @@
         <p id="login_para" class="login_animate">We have missed you!</p>
         <input id='username' type="text" class='text' onfocus="handle2()" class='inc2' type="text" name="Username" placeholder='Username' value="">
         <input id='password' type="password" class='pass' onfocus="handle1()" class='inc1' type="pass" name="Password" placeholder='Password' value="">
+        <svg width="390" height="549" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <rect id='rect' class='rect1' x="10%" y="54%" rx="27" ry="27" width="300px" height="50px" style="stroke: #000; stroke-width: 2px; fill: #fff;"/></svg>
         <button class="loginbutton">Login</button>
-        <svg width="390" height="549" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute">
-        <rect id='rect' class='rect1' x="10%" y="54%" rx="27" ry="27" width="300px" height="50px" style="stroke: #000; stroke-width: 2px; fill: #fff;position:absolute;" />
-  </svg>
       </div>
     </div>
     <div id="login_right_panel">
@@ -35,21 +33,23 @@
     <div id="signupcontainer">
       <div class="header1">Tell us more about you</div>
       <form action="index.html" method="post" name="form" id="signupformv">
-        <input id='name' style="top:18%;" type="text" class='form-styling' type="text" name="name" placeholder='Name' value="" required="required">
-        <span id="showNameError" style="position:absolute;top:20%;color:red;"></span>
-        <input id='username' style="top:26%" type="text" class='form-styling' type="text" name="Username" placeholder='Username' value="" required="required">
-        <input id='email' style="top:34%" type="text" class='form-styling' class='inc2' type="text" name="email" placeholder='Email' value="" required="required">
-        <input id='password' style="top:42%" type="password" class='form-styling' class='inc1' type="pass" name="Password" placeholder='Password' value="" required="required">
-        <input id='repassword' style="top:50%" type="password" class='form-styling' class='inc1' type="pass" name="Password" placeholder='Re-Enter Password' value="" required="required">
+        <input id='firstname' style="top:18%; width:36%;" type="text" class='form-styling' type="text" name="firstname" placeholder='First Name' value="" required="required">
+        <input id='lastname' style="top:18%;left:50%; width:36%;" type="text" class='form-styling' type="text" name="lastname" placeholder='Last Name' value="" required="required">
+        <input id='username' style="top:28%;width:50%;" type="text" class='form-styling' type="text" name="Username" placeholder='Username' value="" required="required">
+        <input id='email' style="top:38%;width:50%;" type="email" class='form-styling' class='inc2' type="email" name="email" placeholder='Email' value="" required="required">
+        <input id='password' oninput="temp(this)" style="top:48%;width:50%;" type="password" class='form-styling' class='inc1'name="password" placeholder='Password' value="" required="required">
+        <input id='password1' oninput="pt(this)" style="top:58%; width:50%;" type="password" class='form-styling' class='inc1' name="Password" placeholder='Re-Enter Password' value="" required="required">
+        <meter style="position:absolute;left:62%;width:26%; top:50%;" max="4" id="password-strength-meter"></meter>
+        <p style="position:absolute;left:50%;width:30%; top:55%;" id="password-strength-text"></p>
         <br>
-        <input type="radio" value="male" name="gender" checked="checked" style="position:absolute;left:10%;top:58%;">
-        <label for="f-option" style="position:absolute;left:14%;top:58%;">Male</label>
-        <input type="radio" value="female" name="gender" style="position:absolute;left:24%;top:58%;">
-        <label for="f-option" style="position:absolute;left:28%;top:58%;">Female</label>
-        <input type="radio" value="other" name="gender" style="position:absolute;left:40%;top:58%;">
-        <label for="f-option" style="position:absolute;left:44%;top:58%;">Other</label>
+        <input type="radio" value="male" name="gender" checked="checked" style="position:absolute;left:10%;top:68%;">
+        <label for="f-option" style="position:absolute;left:14%;top:68%;">Male</label>
+        <input type="radio" value="female" name="gender" style="position:absolute;left:24%;top:68%;">
+        <label for="f-option" style="position:absolute;left:28%;top:68%;">Female</label>
+        <input type="radio" value="other" name="gender" style="position:absolute;left:40%;top:68%;">
+        <label for="f-option" style="position:absolute;left:44%;top:68%;">Other</label>
 
-        <select class='form-styling' style="position:absolute;left:10%;top:64%;width:46%;" required>
+        <select class='form-styling' style="position:absolute;left:10%;top:78%;width:46%;" required>
   <option data-countryCode="IN" value="91" selected>India (+91)</option>
   <option data-countryCode="US" value="1">USA (+1)</option>
   <option data-countryCode="GB" value="44">UK (+44)</option>
@@ -266,19 +266,18 @@
   <option data-countryCode="ZM" value="260">Zambia (+260)</option>
   <option data-countryCode="ZW" value="263">Zimbabwe (+263)</option>
 </select>
-        <input id='tel' style="position: absolute;top:64%;width:30%;left:60%" type="text" class='form-styling' type="text" name="tel" placeholder='Mobile' value="" required>
+        <input id='tel' style="position: absolute;top:78%;width:30%;left:60%" type="text" class='form-styling' type="tel" name="tel" maxlength="10" minlength="10" placeholder='Mobile' value="" required>
         <input type="submit" class="submitbutton" value="Submit" onclick="myvalidatefunc()">
       </form>
     </div>
     <img id="signup_left_panel_img" src="css/img/signup.jpg" alt="">
     <h3 id="signup_left_panel_h3" style="font-size:26px">Already have an account?<br/> <span style="font-size:16px">Login and discover great new products</span></h3>
-    <button  id="signup_left_panel_button" class="submitpage_loginbutton" onclick="submitpage_login()">Login </button>
+    <button id="signup_left_panel_button" class="submitpage_loginbutton" onclick="submitpage_login()">Login </button>
   </div>
-<div id="displayformstatus">
-  <p id="statusmsg"></p>
-</div>
   <script src="js/login.js"></script>
-  <!-- <script src="js/jquery.validate.min.js"></script> -->
+  <script src="js/zxcvbn.js"></script>
+  <script src="js/sweetalert.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script> -->
 </body>
 
 </html>

@@ -1,4 +1,5 @@
 /* @import url("https://fonts.googleapis.com/css?family=Roboto:100"); */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,10 +12,6 @@
   background: #fff;
   left: 20%;
   top: 10%;
-}
-
-.logincontainer svg {
-  position: absolute;
 }
 
 #container {
@@ -43,7 +40,7 @@
 .rect1 {
   position: absolute;
   z-index: 1;
-  stroke-dasharray: 197 509;
+  stroke-dasharray: 190 509;
   stroke-dashoffset: -729;
   transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -58,8 +55,8 @@
 }
 
 .text {
-  position: fixed;
-  top: 38.4%;
+  position: absolute;
+  top: 38.2vh;
   border: none;
   background: #fff;
   margin-left: 101px;
@@ -79,8 +76,8 @@
 }
 
 .pass {
-  position: fixed;
-  top: 46.2%;
+  position: absolute;
+  top: 46.2vh;
   border: none;
   background: #fff;
   margin-left: 101px;
@@ -100,18 +97,18 @@
 }
 
 .loginbutton {
-  position: fixed;
+  position: absolute;
   z-index: 100;
-  width: 18%;
-  height: 6%;
+  width: 18vw;
+  height: 6vh;
   border: 1px solid #fff;
   background: #000;
   color: #fff;
   font-size: 18px;
   font-weight: bold;
   border-radius: 22px;
-  top: 60%;
-  left: 6%;
+  top: 60vh;
+  left: 6vw;
   transition: 0.5s;
   cursor: pointer;
   animation: loginbuttonanimate 1s forwards 0s ease-out;
@@ -160,10 +157,9 @@
   text-align: center;
   color: rgb(0, 0, 0);
   font-size: 38px;
-  margin-left: 80px;
-  margin-top: 148px;
+  left: 6vw;
+  top: 20vh;
   font-weight: 300;
-  /* animation: headeranimate 1s forwards 0s linear; */
 }
 
 .logincontainer p {
@@ -171,8 +167,8 @@
   text-align: center;
   color: rgb(0, 0, 0);
   font-size: 20px;
-  margin-left: 100px;
-  margin-top: 200px;
+  left: 8vw;
+  margin-top: 30vh;
   font-weight: 300;
 }
 
@@ -268,7 +264,7 @@
   position: absolute;
   width: 18%;
   height: 35px;
-  top: 74%;
+  top: 88%;
   left: 34%;
   color: #fff;
   border: 1px solid #fff;
@@ -546,22 +542,71 @@
   }
 }
 
-
-#displayformstatus{
-opacity: 0.6;
-display: none;
-z-index: 100;
-position: absolute;
-top: 6%;
-left: 60%;
-width: 600px;
-height: 650px;
-background: #fff;
+#displayformstatus {
+  opacity: 0.6;
+  display: none;
+  z-index: 100;
+  position: absolute;
+  top: 6%;
+  left: 60%;
+  width: 600px;
+  height: 650px;
+  background: #fff;
 }
 
-#displayformstatus p{
+#displayformstatus p {
   opacity: 1;
   color: red;
   z-index: 150;
   text-align: center;
+}
+
+meter {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0 auto 1em;
+  width: 100%;
+  height: .5em;
+  /* Applicable only to Firefox */
+  background: none;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+meter::-webkit-meter-bar {
+  background: none;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+meter[value="1"]::-webkit-meter-optimum-value {
+  background: red;
+}
+
+meter[value="2"]::-webkit-meter-optimum-value {
+  background: yellow;
+}
+
+meter[value="3"]::-webkit-meter-optimum-value {
+  background: orange;
+}
+
+meter[value="4"]::-webkit-meter-optimum-value {
+  background: green;
+}
+
+meter[value="1"]::-moz-meter-bar {
+  background: red;
+}
+
+meter[value="2"]::-moz-meter-bar {
+  background: yellow;
+}
+
+meter[value="3"]::-moz-meter-bar {
+  background: orange;
+}
+
+meter[value="4"]::-moz-meter-bar {
+  background: green;
 }
