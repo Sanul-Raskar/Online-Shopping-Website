@@ -264,7 +264,7 @@
   position: absolute;
   width: 18%;
   height: 35px;
-  top: 88%;
+  top: 132%;
   left: 34%;
   color: #fff;
   border: 1px solid #fff;
@@ -337,23 +337,25 @@
   /* animation: signupanimate 1s forwards 0s linear; */
 }
 
-#signup_left_panel h3 {
-  position: absolute;
+#container1 h3 {
+  position: fixed;
   top: 4%;
   left: 4%;
   text-align: center;
   font-weight: 300;
 }
 
-#signup_left_panel img {
+#container1 img {
   position: fixed;
-  width: 52%;
+  left: 0;
+  top: 0;
+  width: 48%;
   height: 98.2%;
 }
 
 .submitpage_loginbutton {
   z-index: 100;
-  position: absolute;
+  position: fixed;
   width: 10%;
   height: 35px;
   top: 20%;

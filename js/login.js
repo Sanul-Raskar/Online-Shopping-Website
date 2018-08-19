@@ -78,8 +78,8 @@ var strength = {
   3: "Good ☺",
   4: "Strong ☻"
 }
-var password = document.getElementById("password");
 var password1 = document.getElementById("password1");
+var password2 = document.getElementById("password2");
 var meter = document.getElementById("password-strength-meter");
 var text = document.getElementById("password-strength-text");
 var email = document.getElementById("email");
@@ -98,11 +98,21 @@ email.addEventListener("input", function(event) {
 });
 
 firstname.addEventListener("input", function(event) {
+  var exp = /^[a-zA-Z]+$/;
+
   if (firstname.validity.valueMissing) {
     firstname.setCustomValidity("Please enter first name");
   } else {
     firstname.setCustomValidity("");
   }
+
+  if (firstname.value.match(exp)) {
+    return true;
+  } else {
+    firstname.setCustomValidity("Alphabets only!");
+    return false;
+  }
+
 });
 
 lastname.addEventListener("input", function(event) {
@@ -123,60 +133,38 @@ mobile.addEventListener("input", function(event) {
   }
 });
 
-password.addEventListener("input", function() {
-  if (firstname.validity.valueMissing) {
-    firstname.setCustomValidity("Please re-enter password");
-  }
-  var val = password.value;
-  var result = zxcvbn(val);
-  meter.value = result.score;
-  if (val !== "") {
-    text.innerHTML = "Strength: " + "<strong>" + strength[result.score] + "</strong>";
-  } else {
-    text.innerHTML = "";
-  }
-});
-
-password.addEventListener("input", function pt(event) {
-  if (password.validity.valueMissing) {
-    password.setCustomValidity("Please enter password");
-  }  else {
-    firstname.setCustomValidity("");
-  }
-});
-
-
-password1.addEventListener("input", function pt(event) {
+password1.addEventListener("input", function() {
   if (password1.validity.valueMissing) {
-    password1.setCustomValidity("Please re-enter password");
-  } else if (password.value != password1.value) {
-    password1.setCustomValidity("Password do not match!");
+    password1.setCustomValidity("Please Enter password");
   } else {
     password1.setCustomValidity("");
   }
-});
-
-
-function myvalidatefunc(){
-  console.log("Submit");
-}
-function temp() {
-  console.log("In function");
-  var val = password.value;
+  var val = password1.value;
   var result = zxcvbn(val);
   meter.value = result.score;
   if (val !== "") {
-    console.log("Hello");
     text.innerHTML = "Strength: " + "<strong>" + strength[result.score] + "</strong>";
   } else {
-    console.log("bye");
     text.innerHTML = "";
   }
-}
-function pt(event) {
-  if (password.validity.valueMissing) {
-    password.setCustomValidity("Please enter password");
-  }  else {
-    firstname.setCustomValidity("");
+});
+
+password2.addEventListener("input", function(event) {
+  if (password2.validity.valueMissing) {
+    password2.setCustomValidity("Please re-enter password");
+  } else if (password1.value == password2.value) {
+    password2.setCustomValidity("");
+  } else {
+    password2.setCustomValidity("Password do not match!");
   }
+});
+
+function myvalidatefunc() {
+  console.log("Hello");
+  var myform = document.getElementById("signupformv");
+  if (document.forms["signupformv"].checkValidity()) {
+    document.forms["signupformv"].submit();
+  } else{
+    console.log("Error submitting form");}
+    console.log("Bye");
 }

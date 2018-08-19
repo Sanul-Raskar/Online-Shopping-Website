@@ -32,25 +32,32 @@
   <div id="container1">
     <div id="signupcontainer">
       <div class="header1">Tell us more about you</div>
-      <form action="index.html" method="post" name="form" id="signupformv">
-        <input id='firstname' style="top:18%; width:36%;" type="text" class='form-styling' type="text" name="firstname" placeholder='First Name' value="" required="required">
-        <input id='lastname' style="top:18%;left:50%; width:36%;" type="text" class='form-styling' type="text" name="lastname" placeholder='Last Name' value="" required="required">
-        <input id='username' style="top:28%;width:50%;" type="text" class='form-styling' type="text" name="Username" placeholder='Username' value="" required="required">
-        <input id='email' style="top:38%;width:50%;" type="email" class='form-styling' class='inc2' type="email" name="email" placeholder='Email' value="" required="required">
-        <input id='password' oninput="temp(this)" style="top:48%;width:50%;" type="password" class='form-styling' class='inc1'name="password" placeholder='Password' value="" required="required">
-        <input id='password1' oninput="pt(this)" style="top:58%; width:50%;" type="password" class='form-styling' class='inc1' name="Password" placeholder='Re-Enter Password' value="" required="required">
+      <form action="php/signup.php" method="post" name="form" id="signupformv">
+        <label for="firstname" style="position:absolute;top:18%;font-weight:bold;">Name</label>
+        <input id='firstname' style="top:18%; width:30%;left:20%" type="text" class='form-styling' type="text" name="firstname" placeholder='First Name' value="" required="required">
+        <input id='lastname' style="top:18%;left:54%; width:30%;" type="text" class='form-styling' type="text" name="lastname" placeholder='Last Name' value="" required="required">
+        <label for="username" style="position:absolute;top:28%;font-weight:bold;">Username</label>
+        <input id='username' style="top:28%;width:40%;left:20%;" type="text" class='form-styling' type="text" name="Username" placeholder='eg.sanul123' value="" required="required">
+        <label for="email" style="position:absolute;top:38%;font-weight:bold">Email</label>
+        <input id='email' style="top:38%;width:40%;left:20%" type="email" class='form-styling' class='inc2' type="email" name="email" placeholder='eg.abc@example.com' value="" required="required">
+        <label for="password1" style="position:absolute;top:48%;font-weight:bold;">Password</label>
+        <input id='password1' style="top:48%;width:40%;left:20%" type="password" class='form-styling' class='inc1' name="password1" placeholder='Password' value="" required="required">
+        <label for="password2" style="position:absolute;top:58%; font-weight:bold;">Password</label>
+        <input id='password2' style="top:58%; width:40%;left:20%;" type="password" class='form-styling' class='inc1' name="Password2" placeholder='Re-Enter Password' value="" required="required">
         <meter style="position:absolute;left:62%;width:26%; top:50%;" max="4" id="password-strength-meter"></meter>
-        <p style="position:absolute;left:50%;width:30%; top:55%;" id="password-strength-text"></p>
+        <p style="position:absolute;left:65%;width:30%; top:55%;" id="password-strength-text"></p>
         <br>
-        <input type="radio" value="male" name="gender" checked="checked" style="position:absolute;left:10%;top:68%;">
-        <label for="f-option" style="position:absolute;left:14%;top:68%;">Male</label>
-        <input type="radio" value="female" name="gender" style="position:absolute;left:24%;top:68%;">
-        <label for="f-option" style="position:absolute;left:28%;top:68%;">Female</label>
-        <input type="radio" value="other" name="gender" style="position:absolute;left:40%;top:68%;">
-        <label for="f-option" style="position:absolute;left:44%;top:68%;">Other</label>
-
-        <select class='form-styling' style="position:absolute;left:10%;top:78%;width:46%;" required>
-  <option data-countryCode="IN" value="91" selected>India (+91)</option>
+        <label for="gender" style="position:absolute;top:68%;font-weight:bold;">Gender</label>
+        <input type="radio" value="male" name="gender" checked="checked" style="position:absolute;left:20%;top:68%;">
+        <label for="f-option" style="position:absolute;left:24%;top:68%;">Male</label>
+        <input type="radio" value="female" name="gender" style="position:absolute;left:34%;top:68%;">
+        <label for="f-option" style="position:absolute;left:38%;top:68%;">Female</label>
+        <input type="radio" value="other" name="gender" style="position:absolute;left:50%;top:68%;">
+        <label for="f-option" style="position:absolute;left:54%;top:68%;">Other</label>
+        <label for="country" style="position:absolute;font-weight:bold;top:78%;">Country</label>
+        <select id="country" class='form-styling' style="position:absolute;left:20%;top:78%;width:50%;" required>
+          <option disabled selected>Select Country</option>
+  <option data-countryCode="IN" value="91">India (+91)</option>
   <option data-countryCode="US" value="1">USA (+1)</option>
   <option data-countryCode="GB" value="44">UK (+44)</option>
   <option disabled="disabled">Other Countries</option>
@@ -266,18 +273,22 @@
   <option data-countryCode="ZM" value="260">Zambia (+260)</option>
   <option data-countryCode="ZW" value="263">Zimbabwe (+263)</option>
 </select>
-        <input id='tel' style="position: absolute;top:78%;width:30%;left:60%" type="text" class='form-styling' type="tel" name="tel" maxlength="10" minlength="10" placeholder='Mobile' value="" required>
+        <label for="tel" style="position:absolute;top:88%;font-weight:bold;">Mobile</label>
+        <input id='tel' style="position: absolute;top:88%;width:40%;left:20%" type="text" class='form-styling' type="tel" name="tel" maxlength="10" minlength="10" placeholder='Mobile' value="" required>
+        <label for="birthdate" style="position:absolute;font-weight:bold;top:98%">Birth Date</label>
+        <input id="birthdate" type="date" class="form-styling" style="position:absolute; top:98%; left:20% ;width:28%;" name="birthdate" value="" placeholder="Birthday">
+        <label for="address" style="position:absolute;top:108%;font-weight:bold;">Address</label>
+        <textarea id="address" name="address" class="form-styling" style="position:absolute;top:108%;left:20%; height:20%; font-size:20px;width:50%;" rows="8" cols="80"></textarea>
         <input type="submit" class="submitbutton" value="Submit" onclick="myvalidatefunc()">
       </form>
     </div>
-    <img id="signup_left_panel_img" src="css/img/signup.jpg" alt="">
-    <h3 id="signup_left_panel_h3" style="font-size:26px">Already have an account?<br/> <span style="font-size:16px">Login and discover great new products</span></h3>
-    <button id="signup_left_panel_button" class="submitpage_loginbutton" onclick="submitpage_login()">Login </button>
+      <img id="signup_left_panel_img" src="css/img/signup.jpg" alt="Hello">
+      <h3 id="signup_left_panel_h3" style="font-size:26px">Already have an account?<br/> <span style="font-size:16px">Login and discover great new products</span></h3>
+      <button id="signup_left_panel_button" class="submitpage_loginbutton" onclick="submitpage_login()">Login </button>
   </div>
   <script src="js/login.js"></script>
   <script src="js/zxcvbn.js"></script>
   <script src="js/sweetalert.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script> -->
 </body>
 
 </html>
