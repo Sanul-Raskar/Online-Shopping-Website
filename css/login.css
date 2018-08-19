@@ -247,6 +247,7 @@
 
 .form-styling {
   position: fixed;
+  font-size: 1.2vw;
   left: 10%;
   width: 80%;
   height: 35px;
@@ -256,7 +257,6 @@
   border: none;
   border-radius: 20px;
   background: rgba(113, 110, 31, 0.2);
-  font-weight: bold;
 }
 
 .submitbutton {
@@ -289,7 +289,7 @@
 .header1 {
   position: absolute;
   top: 2%;
-  right: 10%;
+  left: 6%;
   color: rgb(0, 0, 0);
   text-align: center;
   font-size: 38px;
