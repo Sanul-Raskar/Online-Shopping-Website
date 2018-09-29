@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Pixel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/1.7/jquery.fullPage.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/pixel.css">
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="brandLogo">
+      <img id="logo" src="css/img/logo.png" alt="Logo">
+    </div>
+    <div id="sidebar">
+      <ul>
+        <li><i  onclick="showSearch()" class="fas fa-search"></i></li>
+        <li><i class="fas fa-user-circle"></i></li>
+        <li><i class="fas fa-shopping-cart"></i></li> <br>
+
+      </ul>
+      <i style="position:fixed;bottom:5vh;right:2vw;" class="fas fa-share-alt"></i>
+    </div>
+
+    <div id="togglebar">
+      <i style="position:fixed;top:2.4vh;right:2vw;" class="fas fa-bars"></i>
+    </div>
+    <div id="filter">
+      <h2 style="color:#fff; text-align:center">FILTER</h2>
+      <button class="filterButtons" type="button" name="button">Price</button>
+      <button class="filterButtons" type="button" name="button">Operating System</button>
+      <button class="filterButtons" type="button" name="button">Discount</button>
+      <button class="filterButtons" type="button" name="button">Processor</button>
+      <button class="filterButtons" type="button" name="button">Memory</button>
+    </div>
+    <div id="search">
+      <h1>Search....</h1>
+    </div>
+    <div id="container">
+      <div id="phone1" onclick="pixel2xl()">
+        <h2>Google Pixel 2 XL</h2>
+        <img src="css/img/pixel-2-xlBLACK.png" alt="pixel2xl"><br>
+        <i id="phone1logo" class="fab fa-google"></i>
+        <i id="pixel2xlC1" class="fas fa-circle"></i>
+        <i id="pixel2xlC2" class="fas fa-circle"></i>
+        <button type="button" name="button"><i class="fas fa-cart-plus"></i></button>
+        <p>₹60,000</p>
+      </div>
+      <div id="phone2">
+        <h2>Google Pixel</h2>
+        <img src="css/img/pixel.png" alt="pixel"><br>
+        <i id="phone2logo" class="fab fa-google"></i>
+        <i id="pixelC1" class="fas fa-circle"></i>
+        <i id="pixelC2" class="fas fa-circle"></i>
+        <i id="pixelC3" class="fas fa-circle"></i>
+        <button type="button" name="button"><i class="fas fa-cart-plus"></i></button>
+        <p>₹60,000</p>
+      </div>
+      <div id="phone3">
+        <h2>Google Nexus 6P</h2>
+        <img src="css/img/Nexus6P.png" alt="nexus6P"><br>
+        <i id="phone3logo" class="fab fa-google"></i>
+        <i id="nexus6PC1" class="fas fa-circle"></i>
+        <i id="nexus6PC2" class="fas fa-circle"></i>
+        <button type="button" name="button"><i class="fas fa-cart-plus"></i></button>
+        <p>₹60,000</p>
+      </div>
+      <div id="phone4">
+        <h2>Google Nexus 5</h2>
+        <img src="css/img/Nexus5.png" alt="nexus5"><br>
+        <i id="phone4logo" class="fab fa-google"></i>
+        <i id="nexus5C1" class="fas fa-circle"></i>
+        <i id="nexus5C2" class="fas fa-circle"></i>
+        <button type="button" name="button"><i class="fas fa-cart-plus"></i></button>
+        <p>₹60,000</p>
+      </div>
+    </div>
+  </div>
+  <script src="js/pixel.js">
+  </script>
+</body>
+
+</html>

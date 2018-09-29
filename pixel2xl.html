@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Google Pixel 2 XL</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/pixel2xl.css">
+</head>
+
+<body>
+  <div class="toggle_btn">
+    <span class="one"></span>
+    <span class="two"></span>
+  </div>
+  <div class="menu">
+    <div class="data">
+      <ul>
+        <li>Navigation</li>
+        <li> <a href="#">Home</a> </li>
+        <li><a href="#">Search</a> </li>
+        <li><a href="#">Login</a> </li>
+        <li><a href="#">Cart</a> </li>
+        <li> <a href="#">Mobiles</a></li>
+        <li> <a href="#">Laptops</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div id="togglebar"></div>
+  <div id="sidebar">
+    <ul>
+      <li><i onclick="showSearch()" class="fas fa-search"></i></li>
+      <li><i class="fas fa-user-circle"></i></li>
+      <li><i class="fas fa-shopping-cart"></i></li> <br>
+    </ul>
+    <i style="position:fixed;bottom:5vh;right:2vw;" class="fas fa-share-alt"></i>
+  </div>
+  <div class="image">
+    <img id="rightimg" src="css/img/pixel2xlRightImage.jpg" alt="">
+  </div>
+  <div id="curImg"><p id="CurImg">1</p> </div>
+  <div id="totalImages"><p>4</p> </div>
+  <button id="prev" onclick="prevImage()" type="button" name="button"> < </button>
+  <button id="next" onclick="nextImage()" type="button" name="button">></button>
+
+  <div id="info">
+    <h1>Google Pixel 2 XL</h1>
+    <p>Google Inside and Out</p>
+    <button style="margin-right:15px;font-weight:bold" type="button" name="button">Add to Cart</button>
+    <button style="font-weight:bold" type="button" name="button">Buy Now</button><br>
+    <p style="font-size:24px;font-weight:bold">₹60,000/-</p>
+    <table>
+      <tr>
+        <td>Operating system</td>
+        <td>Android 9.0 Pie</td>
+      </tr>
+      <tr>
+        <td>Display</td>
+        <td>P-OLED capacitive touchscreen,16M colors,1440 x 2880 pixels, 18:9 ratio,Corning Gorilla Glass 5,6.0 inches</td>
+      </tr>
+      <tr>
+        <td>Memory</td>
+        <td>64/128 GB, 4 GB RAM</td>
+      </tr>
+      <tr>
+        <td>Camera</td>
+        <td>12.2 MP, f/1.8, 27mm (wide), 1/2.55", 1.4µm, OIS, dual pixel PDAF & laser AF Dual-LED flash, HDR, panorama 2160p@30fps (gyro-EIS), 1080p@30/60/120fps (gyro-EIS), 720p@240fps (gyro-EIS)</td>
+      </tr>
+      <tr>
+        <td>Battery</td>
+        <td>Non-removable Li-Ion 3520 mAh battery</td>
+      </tr>
+
+      <tr>
+        <td>WLAN</td>
+        <td>Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct, DLNA, hotspot</td>
+      </tr>
+      <tr>
+        <td>Bluetooth</td>
+        <td>5.0, A2DP, LE, aptX HD</td>
+      </tr>
+      <tr>
+        <td>GPS</td>
+        <td>Yes, with A-GPS, GLONASS, BDS, GALILEO</td>
+      </tr>
+      <tr>
+        <td>Chipset</td>
+        <td>Qualcomm MSM8998 Snapdragon 835</td>
+      </tr>
+      <tr>
+        <td>CPU</td>
+        <td>Octa-core (4x2.35 GHz Kryo & 4x1.9 GHz Kryo)</td>
+      </tr>
+    </table>
+    <br>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+  <script src="js/pixel2xl.js">
+  </script>
+</body>
+
+</html>

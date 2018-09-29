@@ -1,0 +1,187 @@
+html body{
+  padding: 0;
+  margin: 0;
+}
+
+#sidebar {
+  position: fixed;
+  right: 0;
+  font-size: 2rem;
+  top: 10vh;
+  color: #fff;
+  width: 6vw;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(-80deg, rgb(224, 197, 127) 8%, rgb(190, 145, 28));
+}
+
+#sidebar ul {
+  list-style: none;
+  padding: 1.6rem;
+  line-height: 6rem;
+  z-index: 1;
+}
+
+#togglebar {
+  font-size: 2rem;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 10vh;
+  width: 6vw;
+  background: #000;
+}
+
+#rightimg {
+  position: fixed;
+  width: 46vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+#prev {
+  background-color: rgb(77, 75, 76);
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 38vw;
+  width: 4vw;
+  height: 10vh;
+  border: none;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.6vw;
+  opacity: 0.9;
+  z-index: 2;
+}
+#curImg{
+  background-color: rgb(77, 75, 76);
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 4vw;
+  height: 10vh;
+  border: none;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.6vw;
+  opacity: 0.9;
+  z-index: 2;
+}
+#totalImages{
+  background-color: rgb(40, 41, 41);
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 4vw;
+  width: 4vw;
+  height: 10vh;
+  border: none;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.6vw;
+  opacity: 0.9;
+  z-index: 2;
+}
+
+#next {
+  background-color: rgb(40, 41, 41);
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 42vw;
+  width: 4vw;
+  height: 10vh;
+  border: none;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.6vw;
+  opacity: 0.9;
+  z-index: 2;
+}
+
+#info {
+  position: absolute;
+  right: 6.2vw;
+  top: 2vh;
+  width: 48vw;
+  text-align: center;
+  z-index: 1;
+}
+
+table, tr, td {
+  padding: 1.6vw;
+  font-weight: bold;
+}
+
+.toggle_btn {
+  position: fixed;
+  margin: 1.4em;
+  padding: 1em;
+  width: 40px;
+  height: 10px;
+  right: 0;
+  z-index: 100;
+  color: #fff;
+}
+
+.one {
+  position: absolute;
+  top: 0.6vh;
+  right: 0.2vw;
+  height: 2px;
+  width: 40px;
+  background: #fff;
+  z-index: 100;
+}
+
+.two {
+  position: absolute;
+  top: 1vh;
+  right: 0.2vw;
+  height: 2px;
+  width: 40px;
+  background: #fff;
+  margin-top: 12px;
+  z-index: 100;
+}
+
+.menu {
+  z-index: 5;
+  position: absolute;
+  background: #101010;
+  height: 100vh;
+  width: 100%;
+  top: -100%;
+}
+
+.data {
+  padding: 2em 4em 2em 4em;
+  text-align: right;
+  line-height: 4em;
+
+}
+
+.menu .data ul {
+  list-style: none;
+}
+
+.menu .data ul li:first-child {
+  color: grey;
+  font-style: Poppins;
+  font-size: 24px;
+}
+
+.menu .data ul li:not(:first-child) {
+  color: #fff;
+  font-size: 30px;
+}
+
+.menu .data a {
+  text-decoration: none;
+  color: #fff;
+}
