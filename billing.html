@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Billing</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/billing.css">
+</head>
+
+<body>
+  <div id="topbar"></div>
+  <div class="toggle_btn">
+    <span class="one"></span>
+    <span class="two"></span>
+  </div>
+  <div class="menu">
+    <div class="data">
+      <img id="navImg" src="css/img/logoWhite.png">
+      <ul>
+        <li>Navigation</li>
+        <li> <a href="#">Home</a> </li>
+        <li><a href="#">Search</a> </li>
+        <li><a href="#">Login</a> </li>
+        <li><a href="#">Cart</a> </li>
+        <li> <a href="#">Mobiles</a></li>
+        <li> <a href="#">Laptops</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="togglebar"></div>
+  <div id="sidebar">
+    <ul>
+      <li><i onclick="showSearch()" class="fas fa-search"></i></li>
+      <li><i class="fas fa-user-circle"></i></li>
+      <li><i class="fas fa-shopping-cart"></i></li> <br>
+    </ul>
+    <i style="position:fixed;bottom:5vh;right:2vw;" class="fas fa-share-alt"></i>
+  </div>
+
+  <div class="wrapper">
+    <div id="shippingContainer">
+      <h1>Shipping Address</h1>
+      <table>
+        <tr>
+          <td>Full Name</td>
+          <td><input class="form-styling" type="text" name="name"></td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td><input class="form-styling" type="email" name="name"></td>
+        </tr>
+        <tr>
+          <td>Address</td>
+          <td><textarea class="form-styling" name="name" rows="4" cols="36"></textarea> </td>
+        </tr>
+        <tr>
+          <td>City</td>
+          <td><input class="form-styling" type="text" name="name"></td>
+        </tr>
+        <tr>
+          <td>State</td>
+          <td><input class="form-styling" type="text" name="name"></td>
+        </tr>
+        <tr>
+          <td>Zip</td>
+          <td><input class="form-styling" type="text" name="name"></td>
+        </tr>
+      </table>
+      <br>
+      <input type="submit" style="position:absolute; left:2vw; bottom:1vh;" class="submitbutton" value="Back" onclick="shippingAddressBack()">
+      <input type="submit" style="position:absolute; left:14vw; bottom:1vh;" class="submitbutton" value="Submit" onclick="shippingAddressSubmit()">
+      <br>
+    </div>
+    <div id="paymentConatiner">
+      <h1>Payment</h1>
+      <table>
+        <tr>
+          <td>Name on Card</td>
+          <td><input class="form-styling" type="text" name="name"></td>
+        </tr>
+        <tr>
+          <td>Credit card number</td>
+          <td><input class="form-styling" type="text" name="name"></td>
+        </tr>
+        <tr>
+          <td>Exp Month</td>
+          <td><input class="form-styling" type="text" name="name"></td>
+        </tr>
+        <tr>
+          <td>Exp Year</td>
+          <td><input class="form-styling" type="text" name="name"></td>
+        </tr>
+        <tr>
+          <td>CVV</td>
+          <td><input class="form-styling" type="text" name="name"></td>
+        </tr>
+      </table>
+      <br>
+      <input type="submit" style="position:absolute; left:2vw; bottom:1vh;" class="submitbutton" value="Back" onclick="paymentBack()">
+      <input type="submit" style="position:absolute; left:14vw; bottom:1vh;" class="submitbutton" value="Submit" onclick="paymentSubmit()">
+    </div>
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+  <script src="js/navbar.js">
+  </script>
+
+  <script type="text/javascript">
+    function shippingAddressSubmit() {
+      document.querySelector('#shippingContainer').style.display = "none";
+      document.querySelector('#paymentConatiner').style.display = "block";
+    }
+    function paymentBack() {
+      document.querySelector('#shippingContainer').style.display = "block";
+      document.querySelector('#paymentConatiner').style.display = "none";
+    }
+  </script>
+</body>
+
+</html>

@@ -9,12 +9,14 @@
 </head>
 
 <body>
+  <div id="topbar"></div>
   <div class="toggle_btn">
     <span class="one"></span>
     <span class="two"></span>
   </div>
   <div class="menu">
     <div class="data">
+      <img id="navImg" src="css/img/logoWhite.png">
       <ul>
         <li>Navigation</li>
         <li> <a href="#">Home</a> </li>
@@ -41,8 +43,12 @@
   <div class="image">
     <img id="rightimg" src="css/img/pixel2xlRightImage.jpg" alt="">
   </div>
-  <div id="curImg"><p id="CurImg">1</p> </div>
-  <div id="totalImages"><p>4</p> </div>
+  <div id="curImg">
+    <p id="CurImg">1</p>
+  </div>
+  <div id="totalImages">
+    <p>4</p>
+  </div>
   <button id="prev" onclick="prevImage()" type="button" name="button"> < </button>
   <button id="next" onclick="nextImage()" type="button" name="button">></button>
 
@@ -51,7 +57,7 @@
     <p>Google Inside and Out</p>
     <button style="margin-right:15px;font-weight:bold" type="button" name="button">Add to Cart</button>
     <button style="font-weight:bold" type="button" name="button">Buy Now</button><br>
-    <p style="font-size:24px;font-weight:bold">₹60,000/-</p>
+    <p style="font-size:20px;font-weight:bold">₹60,000/-</p>
     <table>
       <tr>
         <td>Operating system</td>
@@ -97,10 +103,10 @@
     </table>
     <br>
   </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
-  <script src="js/pixel2xl.js">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <script src="js/pixel2xl.js"></script>
+  <script src="js/navbar.js">
   </script>
 </body>
 
