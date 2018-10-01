@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/1.7/jquery.fullPage.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body onload="animate()">
+  <div id="brandLogo">
+    <img id="logo" src="css/img/logo.png" alt="Logo">
+  </div>
+  <div id="sidebar">
+    <ul>
+      <li><i class="fas fa-search"></i></li>
+      <li><i class="fas fa-user-circle"></i></li>
+      <li><i class="fas fa-cart-plus"></i></li> <br>
+    </ul>
+    <i style="position:fixed;bottom:5vh;right:2vw;" class="fas fa-share-alt"></i>
+  </div>
+
+  <div id="togglebar">
+    <i style="position:fixed;top:2.4vh;right:2vw;" class="fas fa-bars"></i>
+  </div>
+  <nav id="menu">
+    <ul>
+      <li> <a data-anchor="slide1" href="#firstPage"> <span id="a1">Pixel 2 XL</span></a>
+      </li>
+      <li> <a data-anchor="slide2" href="#secondPage"> <span id="a2">MacBook</span></a>
+      </li>
+      <li> <a data-anchor="slide3" href="#lastPage"> <span id="a3">Contact Us</span></a>
+      </li>
+      <li> <a data-anchor="slide3" href="#lastPage"> <span id="a4">About Us</span></a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <div id="wrapper">
+    <div class="section" id="section1">
+      <div id="pixel2xl">
+        <h1 id="pixel2xlH1">The all-new <br>Pixel 2 XL.</h1>
+        <p id="pixel2xlp1">Google inside <br>and out.</p>
+        <img id="pixelimg" src="css/img/pixel2xlFront.png" alt="pixel">
+        <img id="androidimg" src="css/img/android.png" alt="android">
+        <button class="buynowButton">Buy Now</button>
+      </div>
+      <div id="assistant">
+        <h1 id="assistantH1">Your own personal <br> Google, built in. </h1>
+        <p id="assistantp1">Take a selfie, text Mum, turn on <br> Bluetooth and navigate home, all with <br>your voice.</p>
+        <h1 id="assistantH2">Squeeze <br> for help. </h1>
+        <p id="assistantp2">With a squeeze, you can launch your <br> Google Assistant for real-time help.</p>
+        <img id="assistantimg" src="css/img/assistant.png" alt="assistant">
+        <button class="learnMoreButton">Learn More</button>
+
+      </div>
+      <div id="googlelens">
+        <h1 id="googlelensH1">Search what you see.</h1>
+        <p id="googlelensp">Learn more about landmarks or look up books,<br> films, albums and artwork using <br> Google
+          Lens
+        </p>
+        <img id="googlelensimg" src="css/img/unnamed.png" alt="Google Lens">
+        <button class="learnMoreButton lmbutton">Learn More</button>
+
+      </div>
+      <button id="pixelRightButton" onclick="pixelNextArrow()"><i class="fas fa-arrow-circle-right"></i></button>
+      <button id="pixelLeftButton" onclick="pixelBackArrow()"><i class="fas fa-arrow-circle-left"></i></button>
+    
+    </div>
+    <div class="section" id="section2">
+      <div id="macbookPro">
+        <h1 id="macbookProH1">
+          MacBook Pro
+        </h1>
+        <p id="macbookProP"> More power. <br> More performance. <br> More pro.</p>
+        <img id="macbookProimg" src="css/img/macbook.png" alt="">
+        <button class="buynowButton bnbutton">Buy Now</button>
+
+      </div>
+
+      <div id="touchbar">
+        <h1 id="touchbarH1">Tap it. Hold it. <br> Flick it. Slide it.</h1>
+        <p id="touchbarP">Familiar gestures make it easy <br> to use the Touch Bar. <br> Tap to expand the Control Strip,<br>          flick
+          to adjust volume and brightness, <br> or slide to rewind while <br> watching a movie.</p>
+        <iframe id="touchbarVideo" width="550" height="470" src="https://www.youtube.com/embed/4BkskUE8_hA?rel=0&amp;controls=0&amp;showinfo=0"
+          frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <button class="learnMoreButton lmbutton1">Learn More</button>
+
+        </div>
+
+      <button id="macRightButton" onclick="macbookNextArrow()"><i class="fas fa-arrow-circle-right"></i></button>
+      <button id="macLeftButton" onclick="macbookBackArrow()"><i class="fas fa-arrow-circle-left"></i></button>
+
+    </div>
+    <div class="section" id="section3">
+      <p><i class="fas fa-code"></i> in <i class="fas fa-heart"></i> with <i class="fab fa-github-alt"></i>
+       </p>
+    </div>
+  </div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/1.7/jquery.fullPage.js" charset="utf-8"></script>
+  <script src="js/home.js"></script>
+
+</body>
+
+</html>

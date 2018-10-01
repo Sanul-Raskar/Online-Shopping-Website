@@ -1,0 +1,536 @@
+#section1 {
+  background: linear-gradient(45deg, #ff1a1a 36%, #ffcccc);
+}
+
+#brandLogo {
+  display: block;
+  position: fixed;
+  left: 2vw;
+  top: 2.6vh;
+  z-index: 200;
+}
+
+#logo {
+  width: 10vw;
+  height: 14vh;
+  z-index: 200;
+}
+
+#sidebar {
+  position: fixed;
+  right: 0;
+  font-size: 2rem;
+  top: 10vh;
+  z-index: 200;
+  color: #fff;
+  width: 6vw;
+  height: 100%;
+  background: linear-gradient(-80deg, #ff8080 8%, #ff1a1a);
+}
+
+#sidebar ul {
+  list-style: none;
+  padding: 1.6rem;
+  line-height: 6rem;
+}
+
+#togglebar {
+  font-size: 2rem;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 10vh;
+  width: 6vw;
+  z-index: 200;
+  background: #000;
+}
+
+#pixelRightButton {
+  background-color: transparent;
+  border: none;
+  z-index: 200;
+  display: block;
+  font-size: 2.4rem;
+  color: #000;
+  position: absolute;
+  top: 50vh;
+  right: 8vw;
+}
+
+#pixelLeftButton {
+  background-color: transparent;
+  border: none;
+  z-index: 200;
+  display: block;
+  font-size: 2.4rem;
+  color: #000;
+  position: absolute;
+  top: 50vh;
+  left: 2vw;
+}
+
+#menu {
+  position: fixed;
+  width: 100%;
+  top: 5vh;
+  left: 14vw;
+  z-index: 200;
+  text-align: center;
+}
+
+#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+#menu ul li {
+  float: left;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+#menu ul li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding-left: 8rem;
+  text-decoration: none;
+}
+
+#menu ul li a:hover {
+  color: #000;
+}
+
+.menuActive {
+  color: #000;
+}
+
+#pixel2xl {
+  display: block;
+}
+
+#pixelimg {
+  display: block;
+  position: absolute;
+  top: 17vh;
+  left: 16vw;
+  width: 45vw;
+  height: 80vh;
+}
+
+#androidimg {
+  z-index: 100;
+  display: block;
+  position: absolute;
+  bottom: 12vh;
+  left: 6vw;
+  width: 15vw;
+  height: 22vh;
+  opacity: 0;
+}
+
+#pixel2xlH1 {
+  display: block;
+  position: absolute;
+  top: 15vh;
+  right: 20vw;
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+}
+
+.animatePixel2xlH1 {
+  animation: Heading1 2s forwards 0s cubic-bezier(.17, .67, .83, .67);
+}
+
+#pixel2xlp1 {
+  display: block;
+  position: absolute;
+  top: 38vh;
+  right: 26vw;
+  font-size: 1.3rem;
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+}
+
+.animatePixel2xlp1 {
+  animation: Heading1 2s forwards 0s cubic-bezier(.17, .67, .83, .67);
+}
+
+#assistant {
+  display: none;
+}
+
+#assistantH1 {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  top: 15vh;
+  right: 18vw;
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+}
+
+.animateAssistantH1 {
+  animation: Heading1 2s forwards 0s cubic-bezier(.17, .67, .83, .67);
+}
+
+#assistantp1 {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  top: 40vh;
+  right: 21.6vw;
+  font-size: 1.3rem;
+  color: #fff;
+  text-align: center;
+}
+
+.animateAssistantp1 {
+  animation: Heading1 2s forwards 0s cubic-bezier(.17, .67, .83, .67);
+}
+
+#assistantimg {
+  display: none;
+  position: absolute;
+  top: 20vh;
+  left: 16vw;
+  width: 45vw;
+  height: 74vh;
+}
+
+#assistantH2 {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  bottom: 16vh;
+  left: 5vw;
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+}
+
+.animateAssistantH2 {
+  animation: Heading2 2s forwards 0s cubic-bezier(.17, .67, .83, .67);
+}
+
+#assistantp2 {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  bottom: 8vh;
+  left: 5vw;
+  font-size: 1.3rem;
+  color: #fff;
+  text-align: center;
+}
+
+.animateAssistantp2 {
+  animation: Heading2 2s forwards 0s cubic-bezier(.17, .67, .83, .67);
+}
+
+@keyframes Animate_top_text {
+  0% {
+    transform: translateX(-8vw);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translateX(4vw);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(4vw);
+    opacity: 1;
+  }
+}
+
+.animateTopText {
+  animation: Animate_top_text 1s forwards 0.5s linear;
+}
+
+@keyframes Animate_bottom_text {
+  0% {
+    transform: translateX(4vw);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translateX(-2vw);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(-2vw);
+    opacity: 1;
+  }
+}
+
+.animateBottomText {
+  animation: Animate_bottom_text 1s forwards 0.5s linear;
+}
+
+@keyframes AnimateImage {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.5);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animateimage {
+  animation: AnimateImage 0.5s forwards 0s linear;
+}
+
+#googlelens {
+  display: none;
+}
+
+#googlelensimg {
+  z-index: 50;
+  display: none;
+  position: absolute;
+  width: 40vw;
+  height: 86vh;
+  top: 10vh;
+  right: 14vw;
+}
+
+#googlelensH1 {
+  display: none;
+  opacity: 0;
+  font-size: 2rem;
+  z-index: 100;
+  color: #fff;
+  display: block;
+  position: absolute;
+  top: 20vh;
+  left: 14vw;
+  text-align: center;
+}
+
+.animateGoogleLensH1 {
+  animation: Heading2 2s forwards 0s cubic-bezier(.17, .67, .83, .67);
+}
+
+#googlelensp {
+  display: none;
+  opacity: 0;
+  font-size: 1.3rem;
+  z-index: 100;
+  color: #fff;
+  display: block;
+  position: absolute;
+  top: 28vh;
+  left: 8vw;
+  text-align: center;
+}
+
+.animateGoogleLensp {
+  animation: Heading2 2s forwards 0s cubic-bezier(.17, .67, .83, .67);
+}
+
+.buynowButton {
+  position: absolute;
+  z-index: 100;
+  width: 15vw;
+  height: 6.4vh;
+  border: 1px solid #fff;
+  background: #000;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-radius: 22px;
+  top: 58vh;
+  right: 20vw;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.buynowButton:hover {
+  color: #000;
+  font-weight: bold;
+  background: rgba(38, 37, 34, 0.26);
+}
+
+.buynowButton:focus {
+  outline-width: 0;
+}
+
+.learnMoreButton {
+  position: absolute;
+  z-index: 100;
+  width: 15vw;
+  height: 6.4vh;
+  border: 1px solid #fff;
+  background: #000;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-radius: 22px;
+  top: 60vh;
+  right: 24vw;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.learnMoreButton:hover {
+  color: #000;
+  font-weight: bold;
+  background: rgba(38, 37, 34, 0.26);
+}
+
+.learnMoreButton:focus {
+  outline-width: 0;
+}
+
+.lmbutton {
+  position: absolute;
+  top: 50vh;
+  left: 16vw;
+}
+
+#section2 {
+  background: linear-gradient(45deg, #640ab8 36%, #a173c0);
+}
+
+/*
+Section 2
+*/
+
+#macbookPro {
+  display: block;
+}
+
+#macbookProH1 {
+  display: block;
+  opacity: 0;
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 28vh;
+  right: 16vw;
+}
+
+#macbookProP {
+  display: block;
+  opacity: 0;
+  font-size: 1.3rem;
+  z-index: 100;
+  color: #fff;
+  position: absolute;
+  top: 44vh;
+  right: 22vw;
+  text-align: center;
+}
+
+#macbookProimg {
+  z-index: 50;
+  display: block;
+  position: absolute;
+  width: 60vw;
+  height: 68vh;
+  top: 26vh;
+  left: 4vw;
+}
+
+.bnbutton {
+  position: absolute;
+  top: 66vh;
+  right: 18vw;
+}
+
+#touchbar {
+  display: none;
+}
+
+#touchbarH1 {
+  display: none;
+  opacity: 0;
+  z-index: 100;
+  font-size: 3rem;
+  position: absolute;
+  text-align: center;
+  left: 10vw;
+  top: 22vh;
+  color: #fff;
+}
+
+#touchbarP {
+  display: none;
+  opacity: 0;
+  font-size: 1.3rem;
+  z-index: 100;
+  color: #fff;
+  position: absolute;
+  top: 48vh;
+  left: 10vw;
+  text-align: center;
+}
+
+#touchbarVideo {
+  display: none;
+  position: absolute;
+  top: 20vh;
+  right: 14vw;
+}
+
+#macRightButton {
+  background-color: transparent;
+  border: none;
+  z-index: 200;
+  display: block;
+  font-size: 2.4rem;
+  color: #000;
+  position: absolute;
+  top: 50vh;
+  right: 8vw;
+}
+
+#macLeftButton {
+  background-color: transparent;
+  border: none;
+  z-index: 200;
+  display: block;
+  font-size: 2.4rem;
+  color: #000;
+  position: absolute;
+  top: 50vh;
+  left: 2vw;
+}
+
+.lmbutton1 {
+  position: absolute;
+  top: 80vh;
+  left: 14vw;
+}
+
+#section3{
+  background: linear-gradient(45deg, #aa0b40 36%, #e27ba6);
+
+}
+#section3 p i{
+  font-size:90px;
+  text-align: center;
+  color: #fff;
+}
+#section3 p{
+  position: absolute;
+  left:24vw;
+  top:20vh;
+  font-size:90px;
+  text-align: center;
+  color: #fff;
+}
