@@ -19,11 +19,11 @@
       <img id="navImg" src="css/img/logoWhite.png">
       <ul>
         <li>Navigation</li>
-        <li> <a href="#">Home</a> </li>
+        <li> <a href="index.html">Home</a> </li>
         <li><a href="#">Search</a> </li>
-        <li><a href="#">Login</a> </li>
-        <li><a href="#">Cart</a> </li>
-        <li> <a href="#">Mobiles</a></li>
+        <li><a href="login.html">Login</a> </li>
+        <li><a href="cart.html">Cart</a> </li>
+        <li> <a href="pixel.html">Mobiles</a></li>
         <li> <a href="#">Laptops</a></li>
         <li><a href="#">About Us</a></li>
       </ul>
@@ -32,13 +32,13 @@
   <div id="togglebar"></div>
   <div id="sidebar">
     <ul>
-      <li><i onclick="showSearch()" class="fas fa-search"></i></li>
-      <li><i class="fas fa-user-circle"></i></li>
-      <li><i class="fas fa-shopping-cart"></i></li> <br>
+      <li><i class="fas fa-search"></i></li>
+      <li><i class="fas fa-user-circle" onclick="location.href = 'login.html';"></i></li>
+      <li><i class="fas fa-shopping-cart" onclick="location.href = 'cart.html';"></i></li> <br>
     </ul>
     <i style="position:fixed;bottom:5vh;right:2vw;" class="fas fa-share-alt"></i>
   </div>
-
+<div id="container">
   <div class="wrapper">
     <div id="shippingContainer">
       <h1>Shipping Address</h1>
@@ -69,12 +69,12 @@
         </tr>
       </table>
       <br>
-      <input type="submit" style="position:absolute; left:2vw; bottom:1vh;" class="submitbutton" value="Back" onclick="shippingAddressBack()">
+      <input type="submit" style="position:absolute; left:2vw; bottom:1vh;" class="submitbutton" value="Back" onclick="location.href = 'cart.html';">
       <input type="submit" style="position:absolute; left:14vw; bottom:1vh;" class="submitbutton" value="Submit" onclick="shippingAddressSubmit()">
       <br>
     </div>
     <div id="paymentConatiner">
-      <h1>Payment</h1>
+      <h1>Credit Card Details</h1>
       <table>
         <tr>
           <td>Name on Card</td>
@@ -103,11 +103,11 @@
     </div>
 
   </div>
+</div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
   <script src="js/navbar.js">
   </script>
-
   <script type="text/javascript">
     function shippingAddressSubmit() {
       document.querySelector('#shippingContainer').style.display = "none";

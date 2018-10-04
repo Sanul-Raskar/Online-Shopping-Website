@@ -20,7 +20,7 @@
         <input id='password' type="password" class='pass' onfocus="handle1()" class='inc1' type="pass" name="Password" placeholder='Password' value="">
         <svg width="390" height="549" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <rect id='rect' class='rect1' x="10%" y="54%" rx="27" ry="27" width="300px" height="50px" style="stroke: #000; stroke-width: 2px; fill: #fff;"/></svg>
-        <button class="loginbutton">Login</button>
+        <button class="loginbutton" onclick="location.href = 'index.html';">Login</button>
       </div>
     </div>
     <div id="login_right_panel">
@@ -279,12 +279,12 @@
         <input id="birthdate" type="date" class="form-styling" style="position:absolute; top:98%; left:20% ;width:28%;" name="birthdate" value="" placeholder="Birthday">
         <label for="address" style="position:absolute;top:108%;font-weight:bold;">Address</label>
         <textarea id="address" name="address" class="form-styling" style="position:absolute;top:108%;left:20%; height:20%; font-size:20px;width:50%;" rows="8" cols="80"></textarea>
-        <input type="submit" class="submitbutton" value="Submit" onclick="myvalidatefunc()">
+        <input type="submit" class="submitbutton" value="Submit" onclick="signupSuccess()">
       </form>
     </div>
-      <img id="signup_left_panel_img" src="css/img/signup.jpg" alt="Hello">
-      <h3 id="signup_left_panel_h3" style="font-size:26px">Already have an account?<br/> <span style="font-size:16px">Login and discover great new products</span></h3>
-      <button id="signup_left_panel_button" class="submitpage_loginbutton" onclick="submitpage_login()">Login </button>
+    <img id="signup_left_panel_img" src="css/img/signup.jpg" alt="Hello">
+    <h3 id="signup_left_panel_h3" style="font-size:26px">Already have an account?<br/> <span style="font-size:16px">Login and discover great new products</span></h3>
+    <button id="signup_left_panel_button" class="submitpage_loginbutton" onclick="submitpage_login()">Login </button>
   </div>
   <script src="js/login.js"></script>
   <script src="js/zxcvbn.js"></script>

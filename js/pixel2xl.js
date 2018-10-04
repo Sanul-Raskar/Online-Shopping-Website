@@ -20,3 +20,10 @@ function prevImage() {
       currentImage.innerHTML=len;
   image.innerHTML = "<img id='rightimg' src='css/img/" + images[len - 1] + ".jpg'>";
 }
+function AddedToCart(){
+  swal({
+    title: "Success!",
+    text: "Google Pixel 2XL successfully added to cart",
+    icon: "success",
+  });
+}

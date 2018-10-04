@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $('#wrapper').fullpage(
     {
-      anchors: ['firstPage', 'secondPage', 'lastPage'],
+      anchors: ['firstPage', 'secondPage', 'thirdPage','lastPage'],
       menu: '#menu',
       scrollingSpeed: 1000
     }

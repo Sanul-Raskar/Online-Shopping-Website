@@ -64,12 +64,6 @@ function submitpage_login() {
 
 }
 
-// swal({
-//   title: "Success",
-//   text: "Your account has been created successfully!",
-//   icon: "success",
-// });
-
 // Sign up validation
 var strength = {
   0: "Worst ☹",
@@ -88,12 +82,21 @@ var lastname = document.getElementById("lastname");
 var mobile = document.getElementById("tel");
 
 email.addEventListener("input", function(event) {
+
+  var exp = /^([0-9a-zA-Z]([-.\w]*[0-9,a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$/;
   if (email.validity.typeMismatch) {
     email.setCustomValidity("Please enter proper Email!");
   } else if (email.validity.valueMissing) {
     email.setCustomValidity("Please enter email");
   } else {
     email.setCustomValidity("");
+  }
+
+  if (email.value.match(exp)) {
+    return true;
+  } else {
+    email.setCustomValidity("Enter valid email");
+    return false;
   }
 });
 
@@ -116,14 +119,22 @@ firstname.addEventListener("input", function(event) {
 });
 
 lastname.addEventListener("input", function(event) {
+    var exp = /^[a-zA-Z]+$/;
   if (lastname.validity.valueMissing) {
     lastname.setCustomValidity("Please enter last name");
   } else {
     lastname.setCustomValidity("");
   }
+  if (lastname.value.match(exp)) {
+    return true;
+  } else {
+    lastname.setCustomValidity("Alphabets only!");
+    return false;
+  }
 });
 
 mobile.addEventListener("input", function(event) {
+    var exp = /^[0-9]+$/;
   if (mobile.validity.valueMissing) {
     mobile.setCustomValidity("Please enter mobile number");
   } else if (mobile.validity.tooShort) {
@@ -131,7 +142,14 @@ mobile.addEventListener("input", function(event) {
   } else {
     mobile.setCustomValidity("");
   }
+  if (mobile.value.match(exp)) {
+    return true;
+  } else {
+    mobile.setCustomValidity("Numbers only!");
+    return false;
+  }
 });
+
 
 password1.addEventListener("input", function() {
   if (password1.validity.valueMissing) {
@@ -159,12 +177,10 @@ password2.addEventListener("input", function(event) {
   }
 });
 
-function myvalidatefunc() {
-  console.log("Hello");
-  var myform = document.getElementById("signupformv");
-  if (document.forms["signupformv"].checkValidity()) {
-    document.forms["signupformv"].submit();
-  } else{
-    console.log("Error submitting form");}
-    console.log("Bye");
+function signupSuccess() {
+  swal({
+    title: "Account Created Successfully!",
+    text: "Yay! You are now part of our family.",
+    icon: "success",
+  });
 }

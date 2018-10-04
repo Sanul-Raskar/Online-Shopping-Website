@@ -19,11 +19,11 @@
       <img id="navImg" src="css/img/logoWhite.png">
       <ul>
         <li>Navigation</li>
-        <li> <a href="#">Home</a> </li>
+        <li> <a href="index.html">Home</a> </li>
         <li><a href="#">Search</a> </li>
-        <li><a href="#">Login</a> </li>
-        <li><a href="#">Cart</a> </li>
-        <li> <a href="#">Mobiles</a></li>
+        <li><a href="login.html">Login</a> </li>
+        <li><a href="cart.html">Cart</a> </li>
+        <li> <a href="pixel.html">Mobiles</a></li>
         <li> <a href="#">Laptops</a></li>
         <li><a href="#">About Us</a></li>
       </ul>
@@ -36,7 +36,7 @@
     <ul>
       <li><i onclick="showSearch()" class="fas fa-search"></i></li>
       <li><i class="fas fa-user-circle"></i></li>
-      <li><i class="fas fa-shopping-cart"></i></li> <br>
+      <li><i class="fas fa-shopping-cart" onclick="location.href = 'cart.html';"></i></li> <br>
     </ul>
     <i style="position:fixed;bottom:5vh;right:2vw;" class="fas fa-share-alt"></i>
   </div>
@@ -55,8 +55,8 @@
   <div id="info">
     <h1>Google Pixel 2 XL</h1>
     <p>Google Inside and Out</p>
-    <button style="margin-right:15px;font-weight:bold" type="button" name="button">Add to Cart</button>
-    <button style="font-weight:bold" type="button" name="button">Buy Now</button><br>
+    <button class="mybutton" style="margin-right:15px;font-weight:bold" type="button" name="button" onclick="AddedToCart()">Add to Cart</button>
+    <button class="mybutton" style="font-weight:bold" type="button" name="button" onclick="location.href = 'cart.html';">Buy Now</button><br>
     <p style="font-size:20px;font-weight:bold">₹60,000/-</p>
     <table>
       <tr>
@@ -106,6 +106,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
   <script src="js/pixel2xl.js"></script>
+  <script src="js/sweetalert.min.js"></script>
   <script src="js/navbar.js">
   </script>
 </body>

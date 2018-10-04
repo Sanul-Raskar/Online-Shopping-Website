@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cart</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+  <div id="topbar"></div>
+  <div class="toggle_btn">
+    <span class="one"></span>
+    <span class="two"></span>
+  </div>
+  <div class="menu">
+    <div class="data">
+      <img id="navImg" src="css/img/logoWhite.png">
+      <ul>
+        <li>Navigation</li>
+        <li> <a href="index.html">Home</a> </li>
+        <li><a href="#">Search</a> </li>
+        <li><a href="login.html">Login</a> </li>
+        <li><a href="cart.html">Cart</a> </li>
+        <li> <a href="pixel.html">Mobiles</a></li>
+        <li><a href="#">Laptops</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="sidebar">
+    <ul>
+      <li><i class="fas fa-search"></i></li>
+      <li><i class="fas fa-user-circle" onclick="location.href = 'login.html';"></i></li>
+      <li><i class="fas fa-shopping-cart" onclick="location.href = 'cart.html';"></i></li> <br>
+    </ul>
+    <i style="position:fixed;bottom:5vh;right:2vw;" class="fas fa-share-alt"></i>
+  </div>
+  <div id="togglebar"></div>
+  <div class="wrapper">
+    <h1>Cart</h1>
+    <h2 id="message"></h2>
+    <table>
+      <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+      </tr>
+      <tr>
+        <td>Google Pixel 2 XL(Black) <br><br>
+          <button type="button" class="mybutton" name="button" onclick="remove()">Remove from Cart</button>
+        </td>
+        <td>60,000</td>
+        <td>
+          <button class="mybutton" style="width:5vw" type="button" name="button" onclick="plus()">+</button>
+          <p id="quan">1</p>
+          <button class="mybutton" style="width:5vw" type="button" name="button" onclick="minus()">-</button>
+        </td>
+        <td id="total">60,000</td>
+      </tr>
+    </table>
+  </div>
+  <div id="total1">
+    <p>Total : <span id="payAmount">60000</span> </p>
+    <button type="button" class="mybutton" name="button" onclick="location.href = 'billing.html';">Proceed</button>
+  </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+<script src="js/navbar.js">
+</script>
+<script src="js/cart.js">
+</script>
+
+</html>

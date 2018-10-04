@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Kodchasan');
 html body {
   padding: 0;
   margin: 0;
+  font-family: 'Kodchasan', sans-serif;
+}
+
+i {
+  color: #000;
 }
 
 #topbar {
@@ -10,7 +16,8 @@ html body {
   height: 1.6vh;
   z-index: 10;
 }
-#navImg{
+
+#navImg {
   position: absolute;
   left: 10vh;
   top: 24vh;
@@ -22,10 +29,10 @@ html body {
   font-size: 2rem;
   top: 10vh;
   color: #fff;
-  width: 6vw;
+  width: 6.1vw;
   height: 100%;
   z-index: 1;
-  background: linear-gradient(-80deg, rgb(224, 197, 127) 8%, rgb(190, 145, 28));
+  background: linear-gradient(-80deg, #f2f2f2 20%, #b3b3b3);
 }
 
 #sidebar ul {
@@ -42,7 +49,7 @@ html body {
   top: 0;
   right: 0;
   height: 10vh;
-  width: 6vw;
+  width: 6.1vw;
   background: #000;
 }
 
@@ -157,16 +164,18 @@ html body {
 
 #info {
   position: absolute;
-  right: 6.2vw;
-  top: 2vh;
-  width: 48vw;
+  right: 6.1vw;
+  top: 0;
+  width: 47vw;
   text-align: center;
   z-index: 1;
+  background: linear-gradient(45deg, #b3b3b3 20%, #f2f2f2);
 }
 
 table, tr, td {
   padding: 1.6vw;
   font-weight: bold;
+  /* color: #fff; */
 }
 
 .toggle_btn {
@@ -234,4 +243,28 @@ table, tr, td {
 .menu .data a {
   text-decoration: none;
   color: #fff;
+}
+
+.mybutton {
+  z-index: 100;
+  width: 14vw;
+  height: 6vh;
+  border: 1px solid #fff;
+  background: #000;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 22px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.mybutton:hover {
+  color: #000;
+  font-weight: bold;
+  background: rgba(38, 37, 34, 0.26);
+}
+
+.mybutton:focus {
+  outline-width: 0;
 }

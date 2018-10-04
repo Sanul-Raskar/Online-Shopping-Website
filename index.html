@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/1.7/jquery.fullPage.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
-
   <link rel="stylesheet" href="css/home.css">
 </head>
 
@@ -19,14 +18,13 @@
   <div id="sidebar">
     <ul>
       <li><i class="fas fa-search"></i></li>
-      <li><i class="fas fa-user-circle"></i></li>
-      <li><i class="fas fa-cart-plus"></i></li> <br>
+      <li><i class="fas fa-user-circle" onclick="location.href = 'login.html';"></i></li>
+      <li><i class="fas fa-cart-plus" onclick="location.href = 'cart.html';"></i></li> <br>
     </ul>
     <i style="position:fixed;bottom:5vh;right:2vw;" class="fas fa-share-alt"></i>
   </div>
-
   <div id="togglebar">
-    <i style="position:fixed;top:2.4vh;right:2vw;" class="fas fa-bars"></i>
+    <i  id="bars"style="position:fixed;top:2.4vh;right:2vw;" class="fas fa-bars"></i>
   </div>
   <nav id="menu">
     <ul>
@@ -34,14 +32,12 @@
       </li>
       <li> <a data-anchor="slide2" href="#secondPage"> <span id="a2">MacBook</span></a>
       </li>
-      <li> <a data-anchor="slide3" href="#lastPage"> <span id="a3">Contact Us</span></a>
+      <li> <a data-anchor="slide3" href="#thirdPage"> <span id="a3">Contact Us</span></a>
       </li>
-      <li> <a data-anchor="slide3" href="#lastPage"> <span id="a4">About Us</span></a>
+      <li> <a data-anchor="slide4" href="#lastPage"> <span id="a4">About Us</span></a>
       </li>
     </ul>
   </nav>
-
-
   <div id="wrapper">
     <div class="section" id="section1">
       <div id="pixel2xl">
@@ -49,7 +45,7 @@
         <p id="pixel2xlp1">Google inside <br>and out.</p>
         <img id="pixelimg" src="css/img/pixel2xlFront.png" alt="pixel">
         <img id="androidimg" src="css/img/android.png" alt="android">
-        <button class="buynowButton">Buy Now</button>
+        <button class="buynowButton" onclick="location.href = 'pixel.html';">Buy Now</button>
       </div>
       <div id="assistant">
         <h1 id="assistantH1">Your own personal <br> Google, built in. </h1>
@@ -57,8 +53,7 @@
         <h1 id="assistantH2">Squeeze <br> for help. </h1>
         <p id="assistantp2">With a squeeze, you can launch your <br> Google Assistant for real-time help.</p>
         <img id="assistantimg" src="css/img/assistant.png" alt="assistant">
-        <button class="learnMoreButton">Learn More</button>
-
+        <button class="learnMoreButton" onclick="location.href = 'pixel2xl.html';">Learn More</button>
       </div>
       <div id="googlelens">
         <h1 id="googlelensH1">Search what you see.</h1>
@@ -67,11 +62,9 @@
         </p>
         <img id="googlelensimg" src="css/img/unnamed.png" alt="Google Lens">
         <button class="learnMoreButton lmbutton">Learn More</button>
-
       </div>
       <button id="pixelRightButton" onclick="pixelNextArrow()"><i class="fas fa-arrow-circle-right"></i></button>
       <button id="pixelLeftButton" onclick="pixelBackArrow()"><i class="fas fa-arrow-circle-left"></i></button>
-    
     </div>
     <div class="section" id="section2">
       <div id="macbookPro">
@@ -81,9 +74,7 @@
         <p id="macbookProP"> More power. <br> More performance. <br> More pro.</p>
         <img id="macbookProimg" src="css/img/macbook.png" alt="">
         <button class="buynowButton bnbutton">Buy Now</button>
-
       </div>
-
       <div id="touchbar">
         <h1 id="touchbarH1">Tap it. Hold it. <br> Flick it. Slide it.</h1>
         <p id="touchbarP">Familiar gestures make it easy <br> to use the Touch Bar. <br> Tap to expand the Control Strip,<br>          flick
@@ -91,25 +82,22 @@
         <iframe id="touchbarVideo" width="550" height="470" src="https://www.youtube.com/embed/4BkskUE8_hA?rel=0&amp;controls=0&amp;showinfo=0"
           frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           <button class="learnMoreButton lmbutton1">Learn More</button>
-
         </div>
-
       <button id="macRightButton" onclick="macbookNextArrow()"><i class="fas fa-arrow-circle-right"></i></button>
       <button id="macLeftButton" onclick="macbookBackArrow()"><i class="fas fa-arrow-circle-left"></i></button>
-
     </div>
     <div class="section" id="section3">
       <p><i class="fas fa-code"></i> in <i class="fas fa-heart"></i> with <i class="fab fa-github-alt"></i>
        </p>
     </div>
+    <div class="section" id="section4">
+      
+    </div>
   </div>
-
-
   <script src="js/jquery.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/1.7/jquery.fullPage.js" charset="utf-8"></script>
   <script src="js/home.js"></script>
-
 </body>
 
 </html>
