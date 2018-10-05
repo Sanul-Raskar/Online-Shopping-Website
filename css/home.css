@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Kodchasan');
-body{
+body {
   font-family: 'Kodchasan', sans-serif;
 }
+
 #section1 {
   background: linear-gradient(45deg, #ff1a1a 36%, #ffcccc);
 }
@@ -522,20 +523,80 @@ Section 2
   left: 14vw;
 }
 
-#section3{
+#section3 {
   background: linear-gradient(45deg, #aa0b40 36%, #e27ba6);
+}
+
+#section3 p i {
+  font-size: 90px;
+  text-align: center;
+  color: #fff;
+}
+
+/* #section3 p{
+  position: absolute;
+  left:2vw;
+  top:18vh;
+  font-size:20px;
+  text-align: center;
+  color: #fff;
+} */
+
+#info {
+  position: absolute;
+  top: 20vh;
+  left: 8vw;
+  width: 40vw;
+  text-align: center;
+  color: #fff;
+  font-size: 2vw;
+}
+
+#contactus {
+  position: absolute;
+  top: 20vh;
+  width: 38vw;
+  right: 14vw;
+  text-align: center;
+  float: left;
+  color: #fff;
+  font-size: 2vw;
+}
+
+#contactus ul li {
+  padding-bottom: 30px;
+  list-style-type: none;
+}
+
+#social{
+  position: absolute;
+  bottom: 8vh;
+  left: 30vw;
+  color: #fff;
+  float: left;
+  padding-left: 3vw;
+  font-size: 2vw;
+}
+#social i{
+  font-size: 3vw;
+  padding-left: 2.6vw;
+}
+#section4 {
+background: linear-gradient(45deg, #804000 36%, #ffd9b3);
 
 }
-#section3 p i{
-  font-size:90px;
-  text-align: center;
-  color: #fff;
-}
-#section3 p{
+.graph{
   position: absolute;
-  left:24vw;
   top:20vh;
-  font-size:90px;
-  text-align: center;
+  right:10vw;
+  width: 60vw;
+  z-index: 500;
+}
+
+#team{
+  position: absolute;
+  left: 4vw;
+  top:20vh;
   color: #fff;
+  font-size: 2vw;
 }

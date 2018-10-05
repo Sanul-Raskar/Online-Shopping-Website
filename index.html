@@ -6,8 +6,7 @@
   <title>Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/1.7/jquery.fullPage.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="css/home.css">
 </head>
 
@@ -24,7 +23,7 @@
     <i style="position:fixed;bottom:5vh;right:2vw;" class="fas fa-share-alt"></i>
   </div>
   <div id="togglebar">
-    <i  id="bars"style="position:fixed;top:2.4vh;right:2vw;" class="fas fa-bars"></i>
+    <i id="bars" style="position:fixed;top:2.4vh;right:2vw;" class="fas fa-bars"></i>
   </div>
   <nav id="menu">
     <ul>
@@ -34,7 +33,7 @@
       </li>
       <li> <a data-anchor="slide3" href="#thirdPage"> <span id="a3">Contact Us</span></a>
       </li>
-      <li> <a data-anchor="slide4" href="#lastPage"> <span id="a4">About Us</span></a>
+      <li> <a data-anchor="slide4" href="#fourthPage"> <span id="a4">About Us</span></a>
       </li>
     </ul>
   </nav>
@@ -57,8 +56,7 @@
       </div>
       <div id="googlelens">
         <h1 id="googlelensH1">Search what you see.</h1>
-        <p id="googlelensp">Learn more about landmarks or look up books,<br> films, albums and artwork using <br> Google
-          Lens
+        <p id="googlelensp">Learn more about landmarks or look up books,<br> films, albums and artwork using <br> Google Lens
         </p>
         <img id="googlelensimg" src="css/img/unnamed.png" alt="Google Lens">
         <button class="learnMoreButton lmbutton">Learn More</button>
@@ -77,26 +75,51 @@
       </div>
       <div id="touchbar">
         <h1 id="touchbarH1">Tap it. Hold it. <br> Flick it. Slide it.</h1>
-        <p id="touchbarP">Familiar gestures make it easy <br> to use the Touch Bar. <br> Tap to expand the Control Strip,<br>          flick
-          to adjust volume and brightness, <br> or slide to rewind while <br> watching a movie.</p>
-        <iframe id="touchbarVideo" width="550" height="470" src="https://www.youtube.com/embed/4BkskUE8_hA?rel=0&amp;controls=0&amp;showinfo=0"
-          frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          <button class="learnMoreButton lmbutton1">Learn More</button>
-        </div>
+        <p id="touchbarP">Familiar gestures make it easy <br> to use the Touch Bar. <br> Tap to expand the Control Strip,<br> flick to adjust volume and brightness, <br> or slide to rewind while <br> watching a movie.</p>
+        <iframe id="touchbarVideo" width="550" height="470" src="https://www.youtube.com/embed/4BkskUE8_hA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <button class="learnMoreButton lmbutton1">Learn More</button>
+      </div>
       <button id="macRightButton" onclick="macbookNextArrow()"><i class="fas fa-arrow-circle-right"></i></button>
       <button id="macLeftButton" onclick="macbookBackArrow()"><i class="fas fa-arrow-circle-left"></i></button>
     </div>
     <div class="section" id="section3">
-      <p><i class="fas fa-code"></i> in <i class="fas fa-heart"></i> with <i class="fab fa-github-alt"></i>
-       </p>
+
+      <div id="info">
+        <p>Our website is all about providing customers the choice of selecting amongst newest, coolest and trending gadgets present in the market of electronic. Its the only place where the user gets to pick from the gadgets with best-ever designs, extensive
+          features, catchy appearances and much more.</p>
+      </div>
+      <div id="contactus">
+        <h3>Contact Us</h3>
+        <ul>
+          <li>
+            <i class="fa fa-home mr-3"></i> 3299,VIIT,Pune 412210 IN</li>
+          <li> <i class="fa fa-envelope mr-3"></i> abc@gmail.com</li>
+          <li><i class="fa fa-phone mr-3"></i> + 91 7350142164</li>
+        </ul>
+      </div>
+      <div id="social">
+        <h3>Stay Connected with us!</h3>
+        <i class="fab fa-google-plus"></i>
+        <i class="fab fa-github"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
     </div>
     <div class="section" id="section4">
-      
+      <div id="team">
+        <h1>Meet the Team</h1>
+        <p>Sanul Raskar <br> 331059 </p>
+        <p>Manas Kulkarni <br> 331005 </p>
+        <p>Sachin Gotecha <br> 331021 </p>
+      </div>
+      <div class="graph"></div>
     </div>
   </div>
   <script src="js/jquery.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/1.7/jquery.fullPage.js" charset="utf-8"></script>
+  <script src="js/d3.v3.min.js"></script>
   <script src="js/home.js"></script>
 </body>
 
