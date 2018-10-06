@@ -108,6 +108,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
   <script src="js/navbar.js">
   </script>
+    <script src="js/sweetalert.min.js"></script>
   <script type="text/javascript">
     function shippingAddressSubmit() {
       document.querySelector('#shippingContainer').style.display = "none";
@@ -116,6 +117,14 @@
     function paymentBack() {
       document.querySelector('#shippingContainer').style.display = "block";
       document.querySelector('#paymentConatiner').style.display = "none";
+    }
+
+    function paymentSubmit(){
+      swal({
+        title: "Thanks for shopping with us :)",
+        text: "Your order will be shipped within 2-3 business days",
+        icon: "success",
+      });
     }
   </script>
 </body>

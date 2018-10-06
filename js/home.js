@@ -413,7 +413,6 @@ var node = myChart.selectAll('circle')
   .append('g')
   .call(force.drag);
 
-
 node.append('circle')
   .attr('cx', function(d) {
     return d.x;
